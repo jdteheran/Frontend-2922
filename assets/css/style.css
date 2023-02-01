@@ -1,34 +1,54 @@
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../fonts/OpenSans/OpenSans-Regular.ttf");
+}
+html {
+  font-family: 'Open Sans';
+}
 header {
-    background: #444444;
+  background: #444;
 }
-
 header .logo {
-    display: inline-block;
-    border-right: 1px solid #22bce0;
-    padding: 10px 30px 0px 15px;
+  display: inline-block;
+  border-right: 1px solid #22bce0;
+  padding: 0 30px 0 15px;
+  margin: 15px 0;
 }
-
 header .logo img {
-    width: 100px;
+  width: 100px;
 }
-
 header .title-actions {
-    border: 2px solid #333;
-    display: inline-block;
-    vertical-align: top;
+  display: inline-block;
+  vertical-align: top;
+  margin: 10px 0 0 10px;
 }
-
 header .title-actions .title h1 {
-    color: white;
-    font-size: 25px;
+  color: #fff;
+  font-size: 25px;
+  margin-bottom: 5px;
 }
-
 header .title-actions .subtitle h3 {
-    color: #22bce0;
-    font-size: 18px;
+  color: #22bce0;
+  font-size: 18px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-style: italic;
 }
-
+header .title-actions .actions a {
+  color: #dd4f24;
+  text-decoration: none;
+}
+header .title-actions .actions a:first-child {
+  font-size: 16px;
+}
+header .title-actions .actions a:nth-child(2) {
+  font-size: 18px;
+}
+header .title-actions .actions a:last-child {
+  font-size: 21px;
+}
 header .avatar-action {
-    border: 2px solid #333;
-    display: inline-block;
+  border: 2px solid #333;
+  display: inline-block;
+  float: right;
 }
