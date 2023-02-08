@@ -1,5 +1,8 @@
 azul = #22bce0
 naranja = #dd4f24
+gris-claro = #7a7a7a
+gris-oscuro = #444
+amarillo = #e0d460
 
 @font-face {
     font-family: 'Open Sans';
@@ -67,6 +70,7 @@ header
             vertical-align: top 
             margin-top: calc(50px - (16px / 2) - 5px)
             padding: 5px 20px
+            margin-right: -10px
             a
                 text-decoration: none
                 p
@@ -75,7 +79,7 @@ header
                     .ico:before
                         font-family: 'iconitos'
                         content: '\e908'
-                        font-size: 35px
+                        font-size: 18px
                         color: white
                         margin-right: 10px
                         
@@ -90,6 +94,7 @@ header
             margin-top: calc(50px - (16px / 2) - 5px)
             padding: 5px 5px
             background: naranja
+            margin-left: -10px
             p
                 .ico
                     transform: rotate(90deg)
@@ -111,3 +116,102 @@ nav
             a
                 color: white
                 text-decoration: none
+section
+    article
+        margin: 15px 15px
+        border-bottom-left-radius: 10px 
+        border-bottom-right-radius: 10px
+        box-shadow: 2px 2px 8px 1px rgba(0,0,0,0.75)
+        .contents
+            border-bottom: 5px solid azul
+            line-height: 0
+            .image
+                display: inline-block
+                img
+                    height: 200px
+            .blog
+                display: inline-block
+                vertical-align: top 
+                line-height: 1
+                margin-top: 15px
+                margin-left: 20px
+                .title-autor
+                    h3
+                        font-size: 20px
+                        font-weight: bold
+                        color: gris-oscuro
+                        font-style: italic    
+                    p
+                        margin-top: 10px 
+                        color: gris-claro
+                        text-transform: capitalize
+                        span
+                            color: naranja
+                            text-decoration: underline
+                            font-weight: bold
+                .tag-time
+                    margin-top: 25px
+                    .tag
+                        display: inline-block
+                        p
+                            background: azul
+                            padding: 3px 10px
+                            color: white
+                            font-weight: bold
+                            border-radius: 8px
+                    .time
+                        display: inline-block  
+                        float: right 
+                        p
+                            color: gris-claro
+                            span
+                                font-weight: bold     
+        .score
+            padding: 10px 0
+            .up-down
+                display: inline-block
+                margin-left: 10px
+                p
+                    .ico
+                        display: inline-block
+                        font-size: 20px
+                    .ico:before
+                        font-family: 'iconitos'
+                        content: '\ea1c'
+                    .ico:first-child
+                        color: green
+                        transform: rotate(-90deg)
+                    .ico:last-child
+                        color: red
+                        margin-left: 5px
+                        transform: rotate(90deg)
+            .rating
+                display: inline-block
+                float: right
+                margin-right: 10px
+                p
+                    span:first-child
+                        background: gris-oscuro
+                        margin-right: 10px
+                        padding: 3px 8px
+                        color: white
+                        border-radius: 5px
+                    .ico:before
+                        font-family: 'iconitos'
+                        content: '\e9d9'
+                        color: amarillo
+                        font-size: 18px
+footer
+    background: naranja
+    padding: 45px 0
+    text-align: center
+    p
+        color: #f0a996
+        font-weight: bold
+        span
+            display: block
+            font-weight: normal
+        span:before
+            content: '- '
+        span:after
+            content: ' -'

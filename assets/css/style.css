@@ -67,6 +67,7 @@ header .avatar-action .btn-publisher {
   vertical-align: top;
   margin-top: calc(50px - (16px / 2) - 5px);
   padding: 5px 20px;
+  margin-right: -10px;
 }
 header .avatar-action .btn-publisher a {
   text-decoration: none;
@@ -78,7 +79,7 @@ header .avatar-action .btn-publisher a p {
 header .avatar-action .btn-publisher a p .ico:before {
   font-family: 'iconitos';
   content: '\e908';
-  font-size: 35px;
+  font-size: 18px;
   color: #fff;
   margin-right: 10px;
 }
@@ -95,6 +96,7 @@ header .avatar-action .action {
   margin-top: calc(50px - (16px / 2) - 5px);
   padding: 5px 5px;
   background: #dd4f24;
+  margin-left: -10px;
 }
 header .avatar-action .action p .ico {
   transform: rotate(90deg);
@@ -120,4 +122,127 @@ nav ul li {
 nav ul li a {
   color: #fff;
   text-decoration: none;
+}
+section article {
+  margin: 15px 15px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: 2px 2px 8px 1px rgba(0,0,0,0.75);
+}
+section article .contents {
+  border-bottom: 5px solid #22bce0;
+  line-height: 0;
+}
+section article .contents .image {
+  display: inline-block;
+}
+section article .contents .image img {
+  height: 200px;
+}
+section article .contents .blog {
+  display: inline-block;
+  vertical-align: top;
+  line-height: 1;
+  margin-top: 15px;
+  margin-left: 20px;
+}
+section article .contents .blog .title-autor h3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #444;
+  font-style: italic;
+}
+section article .contents .blog .title-autor p {
+  margin-top: 10px;
+  color: #7a7a7a;
+  text-transform: capitalize;
+}
+section article .contents .blog .title-autor p span {
+  color: #dd4f24;
+  text-decoration: underline;
+  font-weight: bold;
+}
+section article .contents .blog .tag-time {
+  margin-top: 25px;
+}
+section article .contents .blog .tag-time .tag {
+  display: inline-block;
+}
+section article .contents .blog .tag-time .tag p {
+  background: #22bce0;
+  padding: 3px 10px;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 8px;
+}
+section article .contents .blog .tag-time .time {
+  display: inline-block;
+  float: right;
+}
+section article .contents .blog .tag-time .time p {
+  color: #7a7a7a;
+}
+section article .contents .blog .tag-time .time p span {
+  font-weight: bold;
+}
+section article .score {
+  padding: 10px 0;
+}
+section article .score .up-down {
+  display: inline-block;
+  margin-left: 10px;
+}
+section article .score .up-down p .ico {
+  display: inline-block;
+  font-size: 20px;
+}
+section article .score .up-down p .ico:before {
+  font-family: 'iconitos';
+  content: '\ea1c';
+}
+section article .score .up-down p .ico:first-child {
+  color: #008000;
+  transform: rotate(-90deg);
+}
+section article .score .up-down p .ico:last-child {
+  color: #f00;
+  margin-left: 5px;
+  transform: rotate(90deg);
+}
+section article .score .rating {
+  display: inline-block;
+  float: right;
+  margin-right: 10px;
+}
+section article .score .rating p span:first-child {
+  background: #444;
+  margin-right: 10px;
+  padding: 3px 8px;
+  color: #fff;
+  border-radius: 5px;
+}
+section article .score .rating p .ico:before {
+  font-family: 'iconitos';
+  content: '\e9d9';
+  color: #e0d460;
+  font-size: 18px;
+}
+footer {
+  background: #dd4f24;
+  padding: 45px 0;
+  text-align: center;
+}
+footer p {
+  color: #f0a996;
+  font-weight: bold;
+}
+footer p span {
+  display: block;
+  font-weight: normal;
+}
+footer p span:before {
+  content: '- ';
+}
+footer p span:after {
+  content: ' -';
 }
